@@ -8,7 +8,6 @@
 
   <body>
     <header class="main-header" data-test="header">
-      <!-- Добавить логотип через BG -->
       <a class="navigation-logo" href="/">
         <img class="header-logo" alt="Логотип Седоны" src="#">
       </a>
@@ -26,7 +25,6 @@
         </li>
       </ul>
       </nav>
-
       <ul class="tools">
         <li class="tools-itme" data-test="search">
           <a href="#">
@@ -47,21 +45,18 @@
         </li>
       </ul>
     </header>
-
     <main class="main-inner" data-test="main">
       <!-- Добавить BG через css -->
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+      <section class="filter" data-test="hero">
+        <h1 class="filter-title">Гостиницы Седоны</h1>
 
-        <ul class="breadcrumbs">
+        <ol class="filter-breadcrumbs">
           <li><img class="image" src="#" alt="Описание картинки."></li>
           <li>
             <a href="">Гостиницы</a>
           </li>
-        </ul>
-      </header>
+        </ol>
 
-      <section class="filter" data-test="hero">
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -86,7 +81,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
@@ -110,7 +104,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <div class="catalog-filter-prices">
@@ -123,20 +116,14 @@
                 <label for="до"></label>
               </div>
             </div>
-
             <input type="range" multiple />
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <button class="button" type="submit">Применить</button>
             <input class="form-reset" type="reset" value="Сбросить">
           </fieldset>
         </form>
       </section>
-
-
-
-
       <section class="hostels">
         <div class="hostels-header">
           <h2 class="hostels-title">Найдено гостиниц: 38</h2>
@@ -154,13 +141,13 @@
 
             <div class="views">
               <button class="views-button _active" type="button">
-                <img src="#" alt="Описание картинки.">>
+                <img src="#" alt="Описание картинки.">
               </button>
               <button class="views-button" type="button">
-                <img src="#" alt="Описание картинки.">>
+                <img src="#" alt="Описание картинки.">
               </button>
               <button class="views-button" type="button">
-                <img src="#" alt="Описание картинки.">>
+                <img src="#" alt="Описание картинки.">
               </button>
             </div>
           </div>
@@ -342,7 +329,9 @@
         </li>
       </ul>
 
-      <div class="footer-phone">+7 (812) 812-12-12</div>
+      <div class="footer-phone">
+        <a href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+      </div>
 
       <a href="https://htmlacademy.ru/" class="footer-logo">
         <img class="footer-logo-img" src="#" alt="Описание картинки.">
