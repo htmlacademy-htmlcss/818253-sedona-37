@@ -349,16 +349,16 @@ template {
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: url(../fonts/ptsans-400.woff2);
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-400.woff2) format("woff2");;
   font-weight: normal;
   font-display: swap
 }
 
 
 @font-face {
-  font-family: 'PT Sans';
-  src: url(../fonts/ptsans-700.woff2);
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-700.woff2) format("woff2");;
   font-weight: bold;
   font-display: swap
 }
@@ -551,7 +551,7 @@ button {
   margin-top: 25px;
 }
 
-.about-description._mt20 {
+.about-description._small-indentation-top {
   margin-top: 20px;
 }
 
@@ -565,6 +565,7 @@ button {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .advantages-list {
